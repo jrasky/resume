@@ -1,34 +1,38 @@
 \documentclass[letterpaper]{article}
 \usepackage[utf8]{inputenc}
 
-\usepackage[margin=.7in]{geometry}
+\usepackage[margin=.8in]{geometry}
 \usepackage[scaled=.90]{helvet}
 \usepackage[dvipsnames]{color}
 \usepackage[compact]{titlesec}
+\usepackage{multicol}
 \usepackage{lipsum}
 
 \setlength{\parindent}{0pt}
 
 \definecolor{titlegray}{gray}{0.3}
 
-\titleformat{\section}{\normalfont\sffamily\Large\bfseries}{\thesection}{}{}
-\titleformat{\subsection}{\normalfont\sffamily\bfseries\color{titlegray}}{\thesection}{}{}
+\titleformat{\section}{\normalfont\sffamily\huge\bfseries}{\thesection}{}{}
+\titleformat{\subsection}{\normalfont\Large\sffamily\bfseries\color{titlegray}}{\thesection}{}{}
 
-\newcommand{\subtitle}{\normalfont\sffamily\color{black}\footnotesize}
+\newcommand{\subtitle}{\normalfont\sffamily\color{black}\large}
 
 \begin{document}
 \sffamily
+\large
+\pagenumbering{gobble}
+
+\section*{\Huge Jerome Rasky}
+\subsection*{jyrome.112@gmail.com \\\subtitle Vancouver, Canada}
+
+\vspace{.4in}
+
+\begin{multicols}{2}
 \section*{Experience}
 \subsection*{New Relic \subtitle San Francisco, CA Summer 2016}
 
-% maybe just in general think about writing these experiences more as stories?
-
-Made significant, critical contributions to the newly-launched Infrastracture
-product, working closely with my team as well as others to (reach the full scope
-of milestones).
-
-% reached the full scope sounds weird, honestly. I'd like to use scope, since
-% that's what pancakes told me directly, but maybe I should pick better verbiage.
+Made significant, critical contributions to the newly-launched Infrastructure
+product, working closely with my team as well as others to meet critical milestones.
 
 \subsection*{Arrayent \subtitle Redwood City, CA Summer 2015}
 
@@ -38,20 +42,38 @@ infrastructure, both with cloud providers like AWS and locally, on the metal.
 
 \subsection*{NASA Ames \subtitle Mountain View, CA 2011-2014}
 
+Worked directly with scientists to develop custom-built tracking solutions as
+part of a larger software engineering team. As my first paid position, working
+at NASA was crucial to developing a professional work ethic, and shaping my
+skills and communication as a team player.
+
 \subsection*{FRC Team 8 Robotics \subtitle Palo Alto, CA 2012-2014}
 
 \subsection*{BSA Troop 14 \subtitle Palo Alto, CA 2011-2013}
+
+\section*{Skills}
+
+Twelve years of experience in software engineering, including as a team member
+in many different situations. 
+
+Diverse work with projects using many industry-tested tools and frameworks, such
+as Spring, React, ElasticSearch.
+
+Deep interest in cutting edge technologies, such as ES6, C++17, and Rust, and a
+desire to further my understanding whenever possible.
+
+\columnbreak
 
 \section*{Personal Projects}
 
 I always look for ways to deepen my understanding of computer science, and
 personal projects provide the perfect opportunity.
 
-\subsection*{FLX/BIS2}
+\subsection*{BIS2}
 
-This bash history search project is something I use every day. It is a fast
-fuzzy search algorithm and frontend that improves searching through command
-history in terminal.
+This bash history search project is something I use every day. It matches a
+frontend to a fast fuzzy search algorithm to make for a better search interface
+for command history in terminal.
 
 \subsection*{Kernel}
 
@@ -59,19 +81,12 @@ Curiosity, and the desire to know how things work drive my interests in a major
 way. Kernel is my effort to build an OS kernel how I wish they could be, with a
 focus on transactions and modularity.
 
-\subsection*{Corepack}
+\subsection*{FLX}
 
-% Maybe pick a better project here? I'm not a huge fan of talking about this one
-% a ton, since it's so focused on the backend
-
-\section*{Skills}
-
-Twelve years of experience in software engineering
-
-Diverse (experience) with many industry-tested tools and frameworks, such as
-Spring, React, ElasticSearch
-
-Deep interest in the cutting edge, such as Rust, ES6, and C++17
+Fast, full-text search is a very important feature of many of my workflows. FLX
+is a general-use full-text search algorithm, which scores any number of lines of
+text based on an input query. It is great as a highly-optimized backend to BIS2,
+searching up to a million lines in under a second.
 
 \section*{Education}
 
@@ -81,5 +96,5 @@ Deep interest in the cutting edge, such as Rust, ES6, and C++17
 Pursuing Bachelor of Science in Computer Science
 
 Expected graduation June 2018
-
+\end{multicols}
 \end{document}
