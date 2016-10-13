@@ -1,12 +1,12 @@
 \documentclass[letterpaper]{article}
 \usepackage[utf8]{inputenc}
 
-\usepackage[margin=.8in]{geometry}
+\usepackage[margin=.75in]{geometry}
 \usepackage[scaled=.90]{helvet}
 \usepackage[dvipsnames]{color}
 \usepackage[compact]{titlesec}
-\usepackage{multicol}
-\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{array}
 
 \setlength{\parindent}{0pt}
 
@@ -14,6 +14,14 @@
 
 \titleformat{\section}{\normalfont\sffamily\huge\bfseries}{\thesection}{}{}
 \titleformat{\subsection}{\normalfont\Large\sffamily\bfseries\color{titlegray}}{\thesection}{}{}
+
+\newlength{\leftcol}
+\newlength{\rightcol}
+
+\setlength{\leftcol}{.4\textwidth}
+\setlength{\rightcol}{.6\textwidth}
+
+\addtolength{\rightcol}{-2.0\tabcolsep}
 
 \newcommand{\subtitle}{\normalfont\sffamily\color{black}\large}
 
@@ -23,12 +31,53 @@
 \pagenumbering{gobble}
 
 \section*{\Huge Jerome Rasky}
-\subsection*{jyrome.112@gmail.com \\\subtitle Vancouver, Canada}
+\subsection*{jyrome.112@gmail.com}
 
-\vspace{.4in}
+Vancouver, Canada
 
-\begin{multicols}{2}
+\begin{tabularx}{\textwidth}{@{}p{\leftcol} p{\rightcol}}
+\section*{In Short}
+\subsection*{Languages}
+
+Java, C++17, Python
+
+JavaScript, Go, Rust
+
+\subsection*{Frameworks}
+
+React, Redux, webpack, Android
+
+\subsection*{Tools}
+
+Linux, git, bash, IntelliJ, Emacs
+
+\subsection*{Skills}
+
+Systems, backend, frontend
+
+DevOps, project management
+
+12 years programming experience
+
+\section*{Volunteering}
+
+\subsection*{UBC CS Student Society \newline\subtitle Fall 2016-present}
+
+Vice President External, responsible for the yearly UBC Technical Career fair.
+Involves directing a diverse, interdisciplinary team using effective
+coordination and communication skills.
+
+\subsection*{FRC Team 8 Robotics \newline\subtitle Palo Alto, CA 2012-2014}
+
+\subsection*{BSA Troop 14 \newline\subtitle Palo Alto, CA 2011-2013}
+
+&
+
+\vspace*{2pt}
+
 \section*{Experience}
+
+
 \subsection*{New Relic \subtitle San Francisco, CA Summer 2016}
 
 Made significant, critical contributions to the newly-launched Infrastructure
@@ -42,30 +91,7 @@ infrastructure, both with cloud providers like AWS and locally, on the metal.
 
 \subsection*{NASA Ames \subtitle Mountain View, CA 2011-2014}
 
-Worked directly with scientists to develop custom-built tracking solutions as
-part of a larger software engineering team. As my first paid position, working
-at NASA was crucial to developing a professional work ethic, and shaping my
-skills and communication as a team player.
-
-\subsection*{FRC Team 8 Robotics \subtitle Palo Alto, CA 2012-2014}
-
-\subsection*{BSA Troop 14 \subtitle Palo Alto, CA 2011-2013}
-
-\section*{Education}
-
-\subsection*{The University of British Columbia \subtitle Vancouver,
-  2014-present}
-
-Pursuing Bachelor of Science in Computer Science
-
-Expected graduation June 2018
-
-\columnbreak
-
 \section*{Personal Projects}
-
-I always look for ways to deepen my understanding of computer science, and
-personal projects provide the perfect opportunity.
 
 \subsection*{BIS2}
 
@@ -86,15 +112,12 @@ is a general-use full-text search algorithm, which scores any number of lines of
 text based on an input query. It is great as a highly-optimized backend to BIS2,
 searching up to a million lines in under a second.
 
-\section*{Skills}
+\section*{Education}
 
-Twelve years of experience in software engineering, including as a team member
-in many different situations. 
+\subsection*{The University of British Columbia \subtitle 2014-present}
 
-Diverse work with projects using many industry-tested tools and frameworks, such
-as Spring, React, ElasticSearch.
+Pursuing BSc in Computer Science
 
-Deep interest in cutting edge technologies, such as ES6, C++17, and Rust, and a
-desire to further my understanding whenever possible.
-\end{multicols}
+Expected graduation June 2018
+\end{tabularx}
 \end{document}
