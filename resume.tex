@@ -14,6 +14,10 @@
 
 \titleformat{\section}{\normalfont\sffamily\huge\bfseries}{\thesection}{}{}
 \titleformat{\subsection}{\normalfont\Large\sffamily\bfseries\color{titlegray}}{\thesection}{}{}
+\titleformat{\subsubsection}{\normalfont\large\sffamily\bfseries\color{titlegray}}{\thesection}{}{}
+
+\titlespacing*{\section}{0pt}{.5\baselineskip}{.5\baselineskip}
+\titlespacing*{\subsection}{0pt}{.5\baselineskip}{.5\baselineskip}
 
 \newlength{\leftcol}
 \newlength{\rightcol}
@@ -36,10 +40,14 @@
 Vancouver, Canada
 
 \begin{tabularx}{\textwidth}{@{}p{\leftcol} p{\rightcol}}
-\section*{In Short}
+\section*{Overview}
 \subsection*{Languages}
 
+\subsubsection*{Proficient}
+
 Java, C++17, Python
+
+\subsubsection*{Experience}
 
 JavaScript, Go, Rust
 
@@ -49,7 +57,9 @@ React, Redux, webpack, Android
 
 \subsection*{Tools}
 
-Linux, git, bash, IntelliJ, Emacs
+Linux, git, Emacs, bash
+
+nodejs, IntelliJ, Mocha
 
 \subsection*{Skills}
 
@@ -59,11 +69,16 @@ DevOps, project management
 
 12 years programming experience
 
+\vspace*{1.7\baselineskip}
+
 \section*{Volunteering}
 
 \subsection*{UBC CS Student Society \newline\subtitle Fall 2016-present}
 
 Vice President External, responsible for the yearly UBC Technical Career fair.
+
+\vspace*{.5\baselineskip}
+
 Involves directing a diverse, interdisciplinary team using effective
 coordination and communication skills.
 
@@ -80,37 +95,37 @@ coordination and communication skills.
 
 \subsection*{New Relic \subtitle San Francisco, CA Summer 2016}
 
-Made significant, critical contributions to the newly-launched Infrastructure
-product, working closely with my team as well as others to meet critical milestones.
+Software engineering intern working on the newly-launched Infrastructure
+product. Made significant contributions, both on the frontend and the backend,
+which enabled the team to meet critical milestones.
 
 \subsection*{Arrayent \subtitle Redwood City, CA Summer 2015}
 
-Managed and resolved issues with critical production systems with real-time
-availability requirements. Learned to effectively instrument and monitor cloud
-infrastructure, both with cloud providers like AWS and locally, on the metal.
+Devops intern managing a large deployment of production systems. Resolved issues
+in services with real-time availability requirements, and learned to effectively
+monitor large-scale infrastructure.
 
 \subsection*{NASA Ames \subtitle Mountain View, CA 2011-2014}
 
 \section*{Personal Projects}
 
-\subsection*{BIS2}
+\subsection*{BIS2 \subtitle evented UI, multithreaded, command-line}
 
-This bash history search project is something I use every day. It matches a
-frontend to a fast fuzzy search algorithm to make for a better search interface
-for command history in terminal.
+Terminal history search, using fuzzy matching. Improves over the search function
+in bash, and is something that I use everyday as an integral part of my
+workflow.
 
-\subsection*{Kernel}
+\subsection*{Kernel \subtitle systems, algorithms, memory management}
 
-Curiosity, and the desire to know how things work drive my interests in a major
-way. Kernel is my effort to build an OS kernel how I wish they could be, with a
-focus on transactions and modularity.
+OS kernel research project, focusing on some ideas I have about operating
+systems. Prompted by a desire to learn more about operating systems and
+hardware.
 
-\subsection*{FLX}
+\subsection*{FLX \subtitle fuzzy search, optimized, backend}
 
-Fast, full-text search is a very important feature of many of my workflows. FLX
-is a general-use full-text search algorithm, which scores any number of lines of
-text based on an input query. It is great as a highly-optimized backend to BIS2,
-searching up to a million lines in under a second.
+Highly optimized fuzzy string search library, used as the backend for BIS2. Uses
+a general-purpose algorithm to make smart guesses about which of a set of
+results is the best.
 
 \section*{Education}
 
