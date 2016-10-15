@@ -1,20 +1,19 @@
 \documentclass[letterpaper]{article}
-\usepackage[utf8]{inputenc}
 
 \usepackage[margin=.75in]{geometry}
-\usepackage[scaled=.90]{helvet}
 \usepackage[dvipsnames]{color}
 \usepackage[compact]{titlesec}
+\usepackage{fontspec}
 \usepackage{tabularx}
 \usepackage{array}
 
 \setlength{\parindent}{0pt}
 
-\definecolor{titlegray}{gray}{0.3}
+\newfontfamily\headingfont[Scale=0.9]{Oxygen}
 
-\titleformat{\section}{\normalfont\sffamily\huge\bfseries}{\thesection}{}{}
-\titleformat{\subsection}{\normalfont\Large\sffamily\bfseries\color{titlegray}}{\thesection}{}{}
-\titleformat{\subsubsection}{\normalfont\large\sffamily\bfseries\color{titlegray}}{\thesection}{}{}
+\titleformat*{\section}{\normalfont\sffamily\huge\bfseries\headingfont}
+\titleformat*{\subsection}{\normalfont\Large\sffamily\bfseries\headingfont}
+\titleformat*{\subsubsection}{\normalfont\large\sffamily\bfseries\headingfont}
 
 \titlespacing*{\section}{0pt}{.5\baselineskip}{.5\baselineskip}
 \titlespacing*{\subsection}{0pt}{.5\baselineskip}{.5\baselineskip}
@@ -35,7 +34,10 @@
 \pagenumbering{gobble}
 
 \section*{\Huge Jerome Rasky}
-\subsection*{jyrome.112@gmail.com}
+
+jyrome.112@gmail.com
+
+(650) 394-5091
 
 Vancouver, Canada
 
@@ -68,8 +70,6 @@ Systems, backend, frontend
 DevOps, project management
 
 12 years programming experience
-
-\vspace*{1.7\baselineskip}
 
 \section*{Volunteering}
 
