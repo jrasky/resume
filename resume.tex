@@ -12,29 +12,32 @@
 \newfontfamily\headingfont[Scale=0.9]{Oxygen}
 \newfontfamily\bodyfont[Scale=0.9]{Asap}
 
-\titleformat*{\section}{\normalfont\huge\bfseries\headingfont}
+\titleformat*{\section}{\normalfont\huge\headingfont}
 \titleformat*{\subsection}{\normalfont\Large\bfseries\headingfont}
 \titleformat*{\subsubsection}{\normalfont\large\bfseries\headingfont}
 
-\titlespacing*{\section}{0pt}{.5\baselineskip}{.4\baselineskip}
+\titlespacing*{\section}{0pt}{.75\baselineskip}{0.0\baselineskip}
 \titlespacing*{\subsection}{0pt}{.5\baselineskip}{.5\baselineskip}
 
 \newlength{\leftcol}
 \newlength{\rightcol}
 
+\setlength{\tabcolsep}{17pt}
 \setlength{\leftcol}{.4\textwidth}
 \setlength{\rightcol}{.6\textwidth}
 
-\addtolength{\rightcol}{-2.0\tabcolsep}
+\addtolength{\leftcol}{-2.0\tabcolsep}
 
 \newcommand{\subtitle}{\normalfont\sffamily\color{black}\large}
+
+\renewcommand{\arraystretch}{0}
 
 \begin{document}
 \bodyfont
 \large
 \pagenumbering{gobble}
 
-\section*{\Huge Jerome Rasky}
+\section*{\Huge\bfseries Jerome Rasky}
 
 jyrome.112@gmail.com
 
@@ -43,15 +46,11 @@ jyrome.112@gmail.com
 Vancouver, Canada
 
 \begin{tabularx}{\textwidth}{@{}p{\leftcol} p{\rightcol}}
-\vspace*{0.5pt}
+\vspace*{1pt}
 \section*{Overview}
 \subsection*{Languages}
 
-\subsubsection*{Proficient}
-
-Java, JavaScript, Python, C11, Rust
-
-\subsubsection*{Experience}
+Java, JavaScript, Python, C11, Rust,
 
 C++17, Go, SQL, AMD64 Assembly
 
@@ -61,7 +60,9 @@ React, Redux, webpack, Android
 
 \subsection*{Tools}
 
-Linux, git, Emacs, bash, nodejs, IntelliJ, Mocha
+Linux, git, Emacs, bash, nodejs,
+
+IntelliJ, Mocha
 
 \subsection*{Skills}
 
@@ -73,14 +74,9 @@ DevOps, project management
 
 \section*{Volunteering}
 
-\subsection*{UBC CS Student Society \newline\subtitle Fall 2016-present}
+\subsection*{UBC CS Student Society \newline\subtitle Fall 2016-Present}
 
-Vice President External, responsible for the yearly UBC Technical Career fair.
-
-\vspace*{.5\baselineskip}
-
-Involves directing a diverse, interdisciplinary team using effective
-coordination and communication skills.
+Vice President External, responsible for the yearly Technical Career fair.
 
 \subsection*{FRC Team 8 Robotics \newline\subtitle Palo Alto, CA 2012-2014}
 
@@ -88,7 +84,14 @@ Project Manager
 
 \subsection*{BSA Troop 14 \newline\subtitle Palo Alto, CA 2011-2013}
 
-Patrol Leader
+\section*{Education}
+
+\subsection*{The University of \newline British Columbia \newline\subtitle
+  Vancouver, 2014-Present}
+
+Pursuing BSc in Computer Science
+
+Expected graduation June 2018
 
 &
 
@@ -97,46 +100,40 @@ Patrol Leader
 \section*{Experience}
 
 
-\subsection*{New Relic \subtitle San Francisco, CA Summer 2016}
+\subsection*{New Relic \subtitle \hfill San Francisco, CA Summer 2016}
 
 Software engineering intern working on the newly-launched Infrastructure
 product. Made significant contributions, both on the frontend and the backend,
 which enabled the team to meet critical milestones.
 
-\subsection*{Arrayent \subtitle Redwood City, CA Summer 2015}
+\subsection*{Arrayent \subtitle \hfill Redwood City, CA Summer 2015}
 
 Devops intern managing a large deployment of production systems. Resolved issues
 in services with real-time availability requirements, and learned to effectively
 monitor large-scale infrastructure.
 
-\subsection*{NASA Ames \subtitle Mountain View, CA 2011-2014}
+\subsection*{NASA Ames \subtitle \hfill Mountain View, CA 2011-2014}
+
+% TODO: Add a description here
 
 \section*{Personal Projects}
 
-\subsection*{BIS2 \subtitle evented UI, multithreaded, command-line}
+\subsection*{BIS2 \subtitle \hfill Evented UI, Multithreaded, Command-Line}
 
 Terminal history search, using fuzzy matching. Improves over the search interface
 in bash with better matching and a better UI. Has become something that I use
 everyday as an integral part of my workflow.
 
-\subsection*{Kernel \subtitle systems, algorithms, memory management}
+\subsection*{Kernel \subtitle \hfill Systems, Algorithms, Memory Management}
 
 OS kernel research project, focusing on some ideas I have about operating
 systems. Prompted by a desire to learn more about operating systems and
 hardware.
 
-\subsection*{FLX \subtitle fuzzy search, optimized, backend}
+\subsection*{FLX \subtitle \hfill Fuzzy Search, Optimized, Backend}
 
 Highly optimized fuzzy string search library, used as the backend for BIS2.
 Based on a general-purpose algorithm to make smart guesses about which of a set
 of results is the best.
-
-\section*{Education}
-
-\subsection*{The University of British Columbia \subtitle 2014-present}
-
-Pursuing BSc in Computer Science
-
-Expected graduation June 2018
 \end{tabularx}
 \end{document}
