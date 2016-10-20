@@ -16,8 +16,8 @@
 \titleformat*{\subsection}{\normalfont\Large\bfseries\headingfont}
 \titleformat*{\subsubsection}{\normalfont\large\bfseries\headingfont}
 
-\titlespacing*{\section}{0pt}{.75\baselineskip}{0.0\baselineskip}
-\titlespacing*{\subsection}{0pt}{.5\baselineskip}{.5\baselineskip}
+\titlespacing*{\section}{0pt}{.5\baselineskip}{.25\baselineskip}
+\titlespacing*{\subsection}{0pt}{.5\baselineskip}{.25\baselineskip}
 
 \newlength{\leftcol}
 \newlength{\rightcol}
@@ -28,7 +28,7 @@
 
 \addtolength{\leftcol}{-2.0\tabcolsep}
 
-\newcommand{\subtitle}{\normalfont\sffamily\color{black}\large}
+\newcommand{\subtitle}{\normalfont\bodyfont\color{black}\large}
 
 \renewcommand{\arraystretch}{0}
 
@@ -37,7 +37,9 @@
 \large
 \pagenumbering{gobble}
 
-\section*{\Huge\bfseries Jerome Rasky}
+{\fontsize{32pt}{32pt}\bfseries\headingfont Jerome Rasky}
+
+\vspace*{.5\baselineskip}
 
 jyrome.112@gmail.com
 
@@ -46,47 +48,57 @@ jyrome.112@gmail.com
 Vancouver, Canada
 
 \begin{tabularx}{\textwidth}{@{}p{\leftcol} p{\rightcol}}
+\raggedright
 \vspace*{1pt}
 \section*{Overview}
 \subsection*{Rename}
 
-Put a small blurb here to talk about how great of a person you are. Focus on the
-things that differentiate you from other candidates, like your five years of
-industry experience or you experience as a manager in different situations.
+Former NASA Software Engineer with 5 years of professional work experience. I
+have experience with systems programming and administration, front-end and
+back-end development, and project management.
 
 \subsection*{Languages}
 
-Java, JavaScript, Python, C11, Rust,
+Java $\textbullet$ JavaScript $\textbullet$ Go
 
-C++17, Go, SQL, AMD64 Assembly
+C++17 $\textbullet$ C11 $\textbullet$ Rust
+
+SQL $\textbullet$ AMD64 Assembly
 
 \subsection*{Frameworks}
 
-React, Redux, webpack, Android
+React $\textbullet$ Redux $\textbullet$ Webpack
+
+Android $\textbullet$ WordPress $\textbullet$ Django
 
 \subsection*{Tools}
 
-Linux, git, Emacs, bash, nodejs,
+Linux $\textbullet$ Git $\textbullet$ Emacs
 
-IntelliJ, Mocha
+Bash $\textbullet$ NodeJS $\textbullet$ Mocha
 
 \subsection*{Skills}
 
-Systems, backend, frontend
+Systems programming
 
-DevOps, project management
+Site relability
 
-12 years programming experience
+Backend development
 
+Frontend development
 
 \section*{Education}
 
 \subsection*{The University of \newline British Columbia \newline\subtitle
   Vancouver, 2014-Present}
 
-Pursuing BSc in Computer Science
+Bachelor of Science in Computer Science, graduating 2018
 
-Expected graduation June 2018
+\subsection*{Coursework}
+
+Algorithms $\textbullet$ Data Structures
+
+Operating Systems
 
 &
 \raggedright
@@ -114,27 +126,32 @@ Full-stack developer, managing both frontend and backend codebases and
 production systems. Worked closely with highly-specialized users to deliver
 interfaces to meet their needs the most closely.
 
-\subsection*{UBC CS Student Society \subtitle \hfill Fall 2016-Present}
+\subsection*{UBC CS Student Society \subtitle \hfill Vancouver, Fall 2016-Present}
 
 Vice President External, responsible for the yearly Technical Career fair.
+Practiced effective communication to coordinate a diverse team in the
+organization of a complex event.
 
-% TODO: Add a description here
+\vspace*{1pt}
 
 \section*{Personal Projects}
 
-\subsection*{Half2 \subtitle \hfill Algorithms, Data Processing}
+\subsection*{Half2 \subtitle \hfill Algorithms $\textbullet$ Data Processing
+  $\textbullet$ Filesystems }
 
 B-tree implementation optimized nearly to match the one in the language. Started
 out as a version control system, but shifted to focus more directly on data
 structures.
 
-\subsection*{Kernel \subtitle \hfill Systems, Algorithms, Memory Management}
+\subsection*{Kernel \subtitle \hfill Systems $\textbullet$ Algorithms
+  $\textbullet$ Memory Management}
 
 OS kernel research project, focusing on some ideas I have about operating
 systems. Prompted by a desire to learn more about operating systems and
 hardware.
 
-\subsection*{BIS2/FLX \subtitle \hfill Fuzzy Search, Optimized, Command-Line}
+\subsection*{BIS2/FLX \subtitle \hfill Fuzzy Search $\textbullet$ Optimized
+  $\textbullet$ Command-Line}
 
 Highly optimized fuzzy search for terminal history. Improves over the default
 search interface with better matching and a better UI. Has become something that
